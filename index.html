@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="https://bootswatch.com/4/yeti/bootstrap.min.css">
+	<title>MyBookList App</title>
+</head>
+<body>
+	<div class="container mt-4">
+		<h1 class="display-4 text-center">
+		<i class="fas fa-book-open text-primary"></i>My<span 
+		class="text-primary">Book</span>List</h1> <!-- these are just the font class and bootstrap classes -->
+		<form id="book-form">
+			<div id="form-group">
+				<label for="title">Title</label>
+				<input type="text" id="title" 
+				class="form-control">
+			</div>
+			<div id="form-group">
+				<label for="author">Author</label>
+				<input type="text" id="author" 
+				class="form-control">
+			</div>
+			<div id="form-group">
+				<label for="isbn">ISBN#</label>
+				<input type="text" id="isbn" 
+				class="form-control">
+			</div>
+			<input type="submit" value="Add Book" class="btn btn-primary btn-block">
+		</form>
+		<table class="table table-striped mt-5"> <!-- USE THIS STYLING FOR KPZ -->
+			<thead>
+				<tr>
+					<th>Title</th>
+					<th>Author</th>
+					<th>ISBN#</th>
+				</tr>
+			</thead>
+			<tbody id="book-list"></tbody>
+		</table>
+	</div> <!-- margin top -->
+	
+	<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
